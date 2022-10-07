@@ -19,6 +19,6 @@ public class CurvedActivity extends GradeActivity{
     @Override
     public void setScore(double score){
         rawScore = score;
-        super.setScore(rawScore * (100 + percentage)/100);
+        super.score = (rawScore * (100 + percentage)/100);
     }
 }

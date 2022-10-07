@@ -3,7 +3,7 @@
  */
 public class GradeActivity {
     // Fields
-    private double score;
+    public double score;
 
     // Constructor
     public GradeActivity(){

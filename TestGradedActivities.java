@@ -1,7 +1,13 @@
 public class TestGradedActivities {
     public static void main(String[] args) {
-        CurvedActivity ca1 = new CurvedActivity(50);
-        ca1.setScore(60);
-        System.out.println("The score is: " + ca1.getScore());
+        GradeActivity[] gradeActivities = new GradeActivity[2];
+        gradeActivities[0] = new FinalExam(20, 5);
+        gradeActivities[1] = new CurvedActivity(50);
+        gradeActivities[1].setScore(60);
+        for(int i = 0; i < gradeActivities.length; i++){
+            System.out.println("The activity score is: " + gradeActivities[i].getScore());
+        }
+
+
     }
 }
